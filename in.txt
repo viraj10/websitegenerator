@@ -1,0 +1,20 @@
+What do we wish to provide
+Problem statement
+For whom
+How do we provide
+How can we be better
+
+1. Some body hits a url that belongs to our client.
+2. Our client has a base page without much content in it. With in base page their is Some SEO info in meta data. This page makes a call to our server for complete page html and also content. With call it passes us the client id(that we have assigned to client) and page type(login, welcome, about, etc).
+3. This is a cross domain call. Also here we check is this call really from our client. The request is aborted if its not our client.
+4. Client id is unique , so from this we check what is the template selected by this client.
+5. We try to get web page in side the template. Each template has 4-6 web pages. Web page is decided from page type received from client and template is decided at 4.
+6. We make html ready and rest of resources ready and sent it to the client
+7. JS adds html to our client web page. this makes web page ready but it still without much of content e.g images.
+8. We make a call for images and other textual data contents. We pass the token representing the contetnt we want. 
+9. We again validate this is from authorized client.
+10.According to the client and token we decide what retrieve contents box.
+11.We try to get the contents that client web page asked for.
+12.We retrieve the content.
+13.Our server passes the contents in response to the call made by client web page.
+14.Wow!! Web page is ready for clients websites user. 
