@@ -4,12 +4,10 @@
     "http://struts.apache.org/dtds/struts2.0.dtd">
 
 <struts>
-
 	<constant name="struts.enable.DynamicMethodInvocation"	value="false" />
 	<constant name="struts.devMode" value="false" />
-	<constant name="struts.custom.i18n.resources"
-		value="ApplicationResources" />
-	<constant name="struts.multipart.saveDir" value="places" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	<constant name="struts.multipart.saveDir" value="images" />
 	<constant name="struts.multipart.maxSize" value="9000000" />
 	<package name="default" extends="struts-default" namespace="/">
 		<default-action-ref name="welcome"/>
@@ -17,4 +15,5 @@
 			<result>view/commonview/welcome.jsp</result>
 		</action>
 	</package>
+	<include file="secureadmin.xml"/>
 </struts>

@@ -1,0 +1,15 @@
+Registering a template/page:
+
+We kind of have add more rows logic here:
+Two list/things need to be retrieved from UI :
+1. Name (similar to container).
+2. Type of content it can store(image,link,text,meta).
+
+Retrieving
+Query can be made as for Template=123 && page= login && client = abcde && name = banner
+
+Storing 
+Query can be made as  store banner="1.jpg" for Template=123 && page= login && client = abcde.
+
+All the details about page in template can be stored in one table like
+Sr no. > Parameter Name > Type

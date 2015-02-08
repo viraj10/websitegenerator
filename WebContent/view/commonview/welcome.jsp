@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h3>WELCOME!!</h3>
+	<a href="secureadmin/registerTemplate">Register a template</a>
 </body>
 </html>
